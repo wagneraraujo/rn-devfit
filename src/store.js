@@ -5,12 +5,12 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import Reducers from "./reducers/index";
 
 const persistConfig = persistReducer(
-	{
-		key: "root",
-		storage: AsyncStorage,
-		whitelist: ["useReducer"],
-	},
-	Reducers,
+  {
+    key: "root",
+    storage: AsyncStorage,
+    whitelist: ["userReducer"]
+  },
+  Reducers
 );
 
 const store = createStore(persistConfig);
