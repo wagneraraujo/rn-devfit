@@ -7,4 +7,6 @@ export default styled.TouchableHighlight`
   justify-content: center;
   align-items: center;
   background: ${props => props.background || "#212841"};
+  margin-bottom: 16px;
+  text-align: center;
 `;
